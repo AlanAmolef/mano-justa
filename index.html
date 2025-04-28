@@ -11,7 +11,6 @@
     <header>
         <img src="logo.png" alt="Logo Mano Justa" class="logo">
         <h1>MANO JUSTA</h1>
-        <a href="https://wa.me/56965537467" class="btn-contacto">Contáctanos</a>
     </header>
 
     <section class="quienes-somos">
@@ -35,12 +34,13 @@
 
     <section class="contacto">
         <h2>Contacto</h2>
-        <p>Teléfonos:</p>
-        <p>+56 9 6553 7467</p>
-        <p>+56 9 4934 3006</p>
-        <p>+56 9 9093 3440</p>
-        <p>+56 9 7824 5758</p>
-        <p>Whatsapp, Instagram y Facebook disponibles</p>
+        <form action="https://formspree.io/f/mnqezwyg" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required><br><br>
+            <input type="text" name="telefono" placeholder="Teléfono" required><br><br>
+            <input type="email" name="correo" placeholder="Correo electrónico" required><br><br>
+            <textarea name="mensaje" placeholder="Escribe tu consulta aquí..." rows="5" required></textarea><br><br>
+            <button type="submit" class="btn-contacto">Enviar</button>
+        </form>
     </section>
 </body>
 </html>
